@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4FF"
+    tools:context=".MainActivity7">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="59dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_modified" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#F3F4FF"
+        android:contentDescription="@string/home_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home__2_" />
+
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#F3F4FF"
+        android:contentDescription="@string/search_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
+        app:srcCompat="@drawable/search__1_" />
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#F3F4FF"
+        android:contentDescription="@string/setting_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchButton"
+        app:srcCompat="@drawable/settings" />
+
+    <ImageButton
+        android:id="@+id/accountButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#F3F4FF"
+        android:contentDescription="@string/account_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/settingsButton"
+        app:srcCompat="@drawable/user__2_" />
+
+    <TextView
+        android:id="@+id/userNameTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/hi"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/welcome_back"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/userNameTag" />
+
+    <ImageButton
+        android:id="@+id/bell_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/rounded_profile_icon"
+        android:contentDescription="@string/notification_bell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bell__1_" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="419dp"
+        android:layout_height="484dp"
+        android:layout_marginTop="30dp"
+        android:background="#ECEEF8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Search"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="category, type"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#050505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        app:backgroundTint="#F3F4FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/nav_home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:backgroundTint="#F3F4FF"
+            android:contentDescription="@string/home_button"
+            app:srcCompat="@drawable/home__2_" />
+
+        <ImageButton
+            android:id="@+id/nav_search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="73.25dp"
+
+            android:backgroundTint="#F3F4FF"
+            android:contentDescription="@string/navitems"
+            app:srcCompat="@drawable/search__1_" />
+
+        <ImageButton
+            android:id="@+id/imageButton20"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="146.5dp"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/add_11"
+            android:contentDescription="@string/navitems" />
+
+        <ImageButton
+            android:id="@+id/nav_account"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="280dp"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/user__2_"
+            android:contentDescription="@string/navitems" />
+
+        <ImageButton
+            android:id="@+id/nav_faq"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="219.75dp"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/interrogation__1_"
+            android:contentDescription="@string/navitems" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>s
+
+</androidx.constraintlayout.widget.ConstraintLayout>
